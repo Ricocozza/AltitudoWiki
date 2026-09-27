@@ -127,7 +127,7 @@ class Tav:
 
 
 # ------------------------------------------------------------------ serramenti
-def finestra(t, fid, lato, y0, y1, ante):
+def finestra(t, fid, lato, y0, y1, ante, tag=True):
     xw0, xw1 = (0, ME) if lato == "S" else (LX - ME, LX)
     t.rect(xw0, y0, xw1, y1, fill="#ffffff")
     # telaio + vetro
@@ -146,6 +146,8 @@ def finestra(t, fid, lato, y0, y1, ante):
         tip = (face + d * L, hinge)
         t.line(face, hinge, *tip, stroke=C_WIN, stroke_width=1, stroke_dasharray="4 3")
         t.arc((face, hinge), tip, (face, other), L, stroke=C_WIN, stroke_width=0.8, stroke_dasharray="4 3")
+    if not tag:
+        return
     # etichetta
     xl = -0.55 if lato == "S" else LX + 0.55
     cy = (y0 + y1) / 2
@@ -482,8 +484,71 @@ def genera(con_arredo, nome_file):
         f.write("\n".join(t.o))
 
 
+def genera_template(nome_file):
+    """Template essenziale: solo muri, aperture, griglia e nomi stanze."""
+    global OX, OY
+    ox_old, oy_old = OX, OY
+    OX, OY = 0.7 * S, 0.7 * S
+    W, H = LX * S + 1.4 * S, LY * S + 1.9 * S
+    t = Tav()
+    w = t.w
+    w(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W*0.25:.0f}mm" height="{H*0.25:.0f}mm" viewBox="0 0 {W:.0f} {H:.0f}" font-family="Helvetica, Arial, sans-serif">
+<title>Template pianta abitazione - scala 1:50</title>
+<defs>
+  <pattern id="g50" width="{S/2}" height="{S/2}" patternUnits="userSpaceOnUse" x="{OX + ME*S}" y="{OY + ME*S}">
+    <path d="M {S/2} 0 L 0 0 0 {S/2}" fill="none" stroke="#c9d4e0" stroke-width="0.4"/>
+  </pattern>
+  <pattern id="g100" width="{S}" height="{S}" patternUnits="userSpaceOnUse" x="{OX + ME*S}" y="{OY + ME*S}">
+    <rect width="{S}" height="{S}" fill="url(#g50)"/>
+    <path d="M {S} 0 L 0 0 0 {S}" fill="none" stroke="#a9bccf" stroke-width="0.8"/>
+  </pattern>
+</defs>
+<rect width="{W:.0f}" height="{H:.0f}" fill="#ffffff"/>''')
+    t.rect(0, 0, LX, LY, fill=C_WALL)
+    w('<g id="stanze">')
+    for nome, (x0, y0, x1, y1, _) in STANZE.items():
+        t.rect(x0, y0, x1, y1, fill="#ffffff")
+        t.rect(x0, y0, x1, y1, fill="url(#g100)")
+    w('</g><g id="finestre">')
+    for fid, _, lato, y0, y1, ante in FINESTRE:
+        finestra(t, fid, lato, y0, y1, ante, tag=False)
+    w('</g><g id="porte">')
+    porta_battente(t, "P1", "h", 1.20, 2.20, 1, -1, ME, IN_Y1)
+    porta_battente(t, "P2", "h", 3.10, 4.00, 0, -1, ME, IN_Y1)
+    porta_scorrevole(t, 1.85, 2.65, Y_BAGNO, MI, -1)
+    porta_battente(t, "P4", "v", 3.65, 4.45, 1, +1, MI, X_TR)
+    porta_battente(t, "P5", "v", 4.80, 5.60, 0, +1, MI, X_TR)
+    porta_battente(t, "P6", "v", 8.05, 8.85, 0, +1, MI, X_TR)
+    w('</g>')
+    # quadro elettrico
+    X, Y = P(IN_X0, 9.20)
+    w(f'<rect x="{X:.1f}" y="{Y-12:.1f}" width="10" height="24" fill="#ffca28" stroke="#111" stroke-width="1.2"/>')
+    # nomi stanze (discreti, non ingombranti)
+    w('<g id="nomi" fill="#8a8a8a" font-weight="700" letter-spacing="1.5">')
+    for nome, (x0, y0, x1, y1, _) in STANZE.items():
+        rot = -90 if nome == "CORRIDOIO" else 0
+        t.text((x0 + x1) / 2, (y0 + y1) / 2 - 0.12, nome, size=13, rot=rot)
+        if not rot:
+            t.text((x0 + x1) / 2, (y0 + y1) / 2 + 0.14, f"{fmt(x1-x0)} × {fmt(y1-y0)}", size=10, font_weight="400")
+    w('</g>')
+    # scala grafica essenziale
+    X, Y = P(0, LY + 0.55)
+    w(f'<g transform="translate({X:.1f},{Y:.1f})">')
+    for i in range(3):
+        w(f'<rect x="{i*S}" y="0" width="{S}" height="6" fill="{"#111" if i%2==0 else "#fff"}" stroke="#111" stroke-width="0.8"/>')
+    for i in range(4):
+        w(f'<text x="{i*S}" y="20" font-size="10" text-anchor="middle">{i}</text>')
+    w(f'<text x="{3*S+10}" y="20" font-size="10">m · griglia 1 m / 50 cm · scala 1:50</text></g>')
+    w('</svg>')
+    with open(nome_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(t.o))
+    OX, OY = ox_old, oy_old
+    return W, H
+
+
 if __name__ == "__main__":
     genera(True, "pianta_abitazione_arredata.svg")
     genera(False, "pianta_abitazione_base.svg")
+    print("template", genera_template("pianta_abitazione_template.svg"))
     for n, (x0, y0, x1, y1, _) in STANZE.items():
         print(f"{n:16s} {x1-x0:.2f} x {y1-y0:.2f} = {(x1-x0)*(y1-y0):.2f} m2")

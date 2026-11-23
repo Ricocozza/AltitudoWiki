@@ -10,7 +10,6 @@ Ogni pezzo e' esportato in 4 rotazioni (r0, r90, r180, r270) perche'
 Milanote non permette di ruotare le immagini.
 """
 import os
-import cairosvg
 
 ROT = 0              # rotazione corrente (usata da T)
 PX_CM = 0.8          # px per cm (80 px/m)
@@ -372,6 +371,7 @@ def foglio_catalogo():
 
 
 if __name__ == "__main__":
+    import cairosvg  # solo per l'export PNG: non serve quando il modulo è importato
     base = "libreria_arredi"
     n = 0
     for v in CATALOGO:

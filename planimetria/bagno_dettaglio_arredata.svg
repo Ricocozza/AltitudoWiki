@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="331mm" height="295mm" viewBox="0 0 1323 1180" font-family="Helvetica, Arial, sans-serif">
+<title>BAGNO — PIANTA DI DETTAGLIO - scala 1:25</title>
+<defs>
+  <pattern id="g10" width="16" height="16" patternUnits="userSpaceOnUse" x="310.0" y="350.0">
+    <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#c3cfdb" stroke-width="0.35"/></pattern>
+  <pattern id="g50" width="80" height="80" patternUnits="userSpaceOnUse" x="310.0" y="350.0">
+    <rect width="80" height="80" fill="url(#g10)"/>
+    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#a9bccf" stroke-width="0.7"/></pattern>
+  <pattern id="g100" width="160" height="160" patternUnits="userSpaceOnUse" x="310.0" y="350.0">
+    <rect width="160" height="160" fill="url(#g50)"/>
+    <path d="M 160 0 L 0 0 0 160" fill="none" stroke="#7f98b3" stroke-width="1"/></pattern>
+  <pattern id="rad" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#d9534f" stroke-width="1.2"/></pattern>
+  <marker id="fr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 9 5 L 0 9 z" fill="#2e7d32"/></marker>
+</defs>
+<style>
+  .dim line { stroke:#2b5d8a; stroke-width:0.7; } .dim .ext { stroke-width:0.45; }
+  .dim .tick { stroke-width:1.3; } .dim text { fill:#2b5d8a; font-weight:600; }
+  .lbl { font-weight:700; letter-spacing:1px; fill:#1d1d1d; } .t { fill:#2b2b2b; } .s { fill:#666; }
+</style>
+<rect width="1323" height="1180" fill="#fff"/>
+<rect x="20" y="20" width="1283" height="1140" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="50" y="68" font-size="30" class="lbl">BAGNO — PIANTA DI DETTAGLIO</text>
+<text x="50" y="98" font-size="15" fill="#555">Scala 1:25 · misure in cm · orientamento come lo schizzo · BOZZA: i punti arancioni vanno confermati</text>
+<rect x="262.0" y="302.0" width="297.6" height="505.6" fill="#262626"/>
+<rect x="310.0" y="350.0" width="232.0" height="440.0" fill="#fbfaf7"/>
+<rect x="310.0" y="350.0" width="232.0" height="440.0" fill="url(#g100)"/>
+<rect x="262.0" y="482.8" width="48.0" height="128.0" fill="#dbeafb" stroke="#1565c0" stroke-width="2"/>
+<line x1="283.6" y1="482.8" x2="283.6" y2="610.8" stroke="#1565c0" stroke-width="1"/>
+<line x1="288.4" y1="482.8" x2="288.4" y2="610.8" stroke="#1565c0" stroke-width="1"/>
+<line x1="310.0" y1="482.8" x2="438.0" y2="482.8" stroke="#1565c0" stroke-width="1.2" stroke-dasharray="5 3"/>
+<path d="M 438.0 482.8 A 128.0 128.0 0 0 1 310.0 610.8" fill="none" stroke="#1565c0" stroke-width="0.9" stroke-dasharray="5 3"/>
+<g transform="translate(414.0,350.0) scale(1.6)"><g transform=""><rect x="0" y="0" width="80" height="103" rx="2" fill="#e3eff9" stroke="#5a5a5a" stroke-width="1.6"/><line x1="0" y1="0" x2="80" y2="103" stroke="#5a5a5a" stroke-width="0.7"/><line x1="80" y1="0" x2="0" y2="103" stroke="#5a5a5a" stroke-width="0.7"/><circle cx="40.0" cy="51.5" r="4" fill="#fff" stroke="#5a5a5a" stroke-width="1"/><text x="40.0" y="91" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="round">doccia 80×103</text><text x="40.0" y="91" font-size="10" text-anchor="middle" dominant-baseline="middle" fill="#333">doccia 80×103</text></g></g>
+<line x1="414.0" y1="350.0" x2="414.0" y2="514.8" stroke="#5b8db8" stroke-width="4"/>
+<g><rect x="530.6" y="416.0" width="9" height="28" rx="2" fill="#fff" stroke="#555" stroke-width="1.2"/><circle cx="521.6" cy="430.0" r="9" fill="#fff" stroke="#555" stroke-width="1.2"/></g>
+<g transform="translate(337.2,350.0) scale(1.6)"><g transform=""><rect x="2" y="0" width="34" height="18" rx="2" fill="#e3eff9" stroke="#5a5a5a" stroke-width="1.6"/><ellipse cx="19.0" cy="36.5" rx="18.0" ry="17.5" fill="#fff" stroke="#5a5a5a" stroke-width="1.6"/></g></g>
+<g transform="translate(310.0,516.4) scale(1.6)"><g transform="translate(0,38) rotate(270)"><rect x="4" y="0" width="30" height="10" rx="2" fill="#e3eff9" stroke="#5a5a5a" stroke-width="1.6"/><ellipse cx="19.0" cy="32.5" rx="18.0" ry="21.5" fill="#fff" stroke="#5a5a5a" stroke-width="1.6"/><circle cx="19.0" cy="20" r="2.5" fill="#fff" stroke="#5a5a5a" stroke-width="1"/></g></g>
+<g transform="translate(310.0,614.0) scale(1.6)"><g transform="translate(0,100) rotate(270)"><rect x="0" y="0" width="100" height="48" rx="2" fill="#e3eff9" stroke="#5a5a5a" stroke-width="1.6"/><ellipse cx="50.0" cy="27.0" rx="40.0" ry="15.0" fill="#fff" stroke="#5a5a5a" stroke-width="1.6"/><circle cx="50.0" cy="6" r="2.5" fill="#fff" stroke="#5a5a5a" stroke-width="1"/></g></g>
+<rect x="526.0" y="674.8" width="16.0" height="60.8" fill="url(#rad)" stroke="#d9534f" stroke-width="1.5"/>
+<g><circle cx="414.0" cy="326.0" r="9" fill="#fff" stroke="#555" stroke-width="1.4"/><line x1="408.0" y1="320.0" x2="420.0" y2="332.0" stroke="#555" stroke-width="1.4"/><line x1="408.0" y1="332.0" x2="420.0" y2="320.0" stroke="#555" stroke-width="1.4"/></g>
+<g transform="translate(494.0,522.8) scale(1.6)"><g transform="translate(30,0) rotate(90)"><rect x="0" y="0" width="60" height="30" rx="2" fill="#e3eff9" stroke="#5a5a5a" stroke-width="1.6"/><text x="30.0" y="8.4" font-size="11" text-anchor="middle" dominant-baseline="middle" font-weight="700" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="round">colonna</text><text x="30.0" y="8.4" font-size="11" text-anchor="middle" dominant-baseline="middle" font-weight="700" fill="#333">colonna</text><text x="30.0" y="22.15" font-size="11" text-anchor="middle" dominant-baseline="middle" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="round">60×30</text><text x="30.0" y="22.15" font-size="11" text-anchor="middle" dominant-baseline="middle" fill="#333">60×30</text></g></g>
+<rect x="310.0" y="630.0" width="6.4" height="128.0" fill="#cfe3f3" stroke="#5b8db8" stroke-width="1.2"/>
+<text x="286.0" y="694.0" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 286.0 694.0)">specchio</text>
+<rect x="425.2" y="522.8" width="64.0" height="60.8" fill="none" stroke="#5b8db8" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="457.2" y="553.2" font-size="9" font-weight="700" fill="#5b8db8" text-anchor="middle" dominant-baseline="middle">tappeto</text>
+<rect x="401.2" y="790.0" width="112.0" height="17.6" fill="#ffffff"/>
+<line x1="401.2" y1="790.0" x2="401.2" y2="807.6" stroke="#262626" stroke-width="1.5"/>
+<line x1="513.2" y1="790.0" x2="513.2" y2="807.6" stroke="#262626" stroke-width="1.5"/>
+<line x1="513.2" y1="790.0" x2="513.2" y2="678.0" stroke="#c62828" stroke-width="2.5"/>
+<path d="M 513.2 678.0 A 112.0 112.0 0 0 0 401.2 790.0" fill="none" stroke="#c62828" stroke-width="1" stroke-dasharray="5 3"/>
+<g><rect x="443.2" y="789.8" width="28" height="18" rx="9" fill="#fff" stroke="#c62828" stroke-width="1.3"/><text x="457.2" y="799.3" font-size="10" font-weight="700" fill="#c62828" text-anchor="middle" dominant-baseline="middle">P3</text></g>
+<g><rect x="303.0" y="577.0" width="14" height="26" rx="2" fill="#fff" stroke="#1a56c4" stroke-width="1.8"/><circle cx="310.0" cy="584.0" r="1.8" fill="#1a56c4"/><circle cx="310.0" cy="596.0" r="1.8" fill="#1a56c4"/><text x="332.0" y="590.5" font-size="14" font-weight="700" fill="#1a56c4" text-anchor="middle" dominant-baseline="middle">2×</text></g>
+<g><rect x="535.0" y="645.8" width="14" height="26" rx="2" fill="#fff" stroke="#1a56c4" stroke-width="1.8"/><circle cx="542.0" cy="652.8" r="1.8" fill="#1a56c4"/><circle cx="542.0" cy="664.8" r="1.8" fill="#1a56c4"/><text x="520.0" y="659.3" font-size="14" font-weight="700" fill="#1a56c4" text-anchor="middle" dominant-baseline="middle">1×</text></g>
+<g><rect x="534.0" y="620.6" width="16" height="22" rx="4" fill="#e7f6f3" stroke="#2a9d8f" stroke-width="1.8"/><line x1="539.0" y1="635.6" x2="545.0" y2="627.6" stroke="#2a9d8f" stroke-width="2"/></g>
+<g><circle cx="367.6" cy="465.2" r="11" fill="#d98200" stroke="#fff" stroke-width="1.5"/><text x="367.6" y="465.7" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text></g>
+<g><circle cx="412.4" cy="679.6" r="11" fill="#d98200" stroke="#fff" stroke-width="1.5"/><text x="412.4" y="680.1" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">2</text></g>
+<g><circle cx="446.0" cy="326.0" r="11" fill="#d98200" stroke="#fff" stroke-width="1.5"/><text x="446.0" y="326.5" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">3</text></g>
+<g><circle cx="514.8" cy="631.6" r="11" fill="#d98200" stroke="#fff" stroke-width="1.5"/><text x="514.8" y="632.1" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">4</text></g>
+<g><circle cx="502.0" cy="705.2" r="11" fill="#d98200" stroke="#fff" stroke-width="1.5"/><text x="502.0" y="705.7" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">5</text></g>
+<g class="dim">
+<line x1="310.0" y1="296.0" x2="310.0" y2="233.0" class="ext"/>
+<line x1="414.0" y1="296.0" x2="414.0" y2="233.0" class="ext"/>
+<line x1="310.0" y1="238.0" x2="414.0" y2="238.0"/>
+<line x1="306.0" y1="242.0" x2="314.0" y2="234.0" class="tick"/>
+<line x1="410.0" y1="242.0" x2="418.0" y2="234.0" class="tick"/>
+<text x="362.0" y="229.0" font-size="11" transform="rotate(0.0 362.0 229.0)" text-anchor="middle" dominant-baseline="middle">65</text></g>
+<g class="dim">
+<line x1="414.0" y1="296.0" x2="414.0" y2="233.0" class="ext"/>
+<line x1="542.0" y1="296.0" x2="542.0" y2="233.0" class="ext"/>
+<line x1="414.0" y1="238.0" x2="542.0" y2="238.0"/>
+<line x1="410.0" y1="242.0" x2="418.0" y2="234.0" class="tick"/>
+<line x1="538.0" y1="242.0" x2="546.0" y2="234.0" class="tick"/>
+<text x="478.0" y="229.0" font-size="11" transform="rotate(0.0 478.0 229.0)" text-anchor="middle" dominant-baseline="middle">80</text></g>
+<g class="dim">
+<line x1="310.0" y1="296.0" x2="310.0" y2="145.0" class="ext"/>
+<line x1="542.0" y1="296.0" x2="542.0" y2="145.0" class="ext"/>
+<line x1="310.0" y1="150.0" x2="542.0" y2="150.0"/>
+<line x1="306.0" y1="154.0" x2="314.0" y2="146.0" class="tick"/>
+<line x1="538.0" y1="154.0" x2="546.0" y2="146.0" class="tick"/>
+<text x="426.0" y="141.0" font-size="13" transform="rotate(0.0 426.0 141.0)" text-anchor="middle" dominant-baseline="middle">145</text></g>
+<g class="dim">
+<line x1="256.0" y1="350.0" x2="193.0" y2="350.0" class="ext"/>
+<line x1="256.0" y1="482.8" x2="193.0" y2="482.8" class="ext"/>
+<line x1="198.0" y1="350.0" x2="198.0" y2="482.8"/>
+<line x1="202.0" y1="346.0" x2="194.0" y2="354.0" class="tick"/>
+<line x1="202.0" y1="478.8" x2="194.0" y2="486.8" class="tick"/>
+<text x="189.0" y="416.4" font-size="11" transform="rotate(90.0 189.0 416.4)" text-anchor="middle" dominant-baseline="middle">83</text></g>
+<g class="dim">
+<line x1="256.0" y1="482.8" x2="193.0" y2="482.8" class="ext"/>
+<line x1="256.0" y1="610.8" x2="193.0" y2="610.8" class="ext"/>
+<line x1="198.0" y1="482.8" x2="198.0" y2="610.8"/>
+<line x1="202.0" y1="478.8" x2="194.0" y2="486.8" class="tick"/>
+<line x1="202.0" y1="606.8" x2="194.0" y2="614.8" class="tick"/>
+<text x="189.0" y="546.8" font-size="11" transform="rotate(90.0 189.0 546.8)" text-anchor="middle" dominant-baseline="middle">80</text></g>
+<g class="dim">
+<line x1="256.0" y1="610.8" x2="193.0" y2="610.8" class="ext"/>
+<line x1="256.0" y1="790.0" x2="193.0" y2="790.0" class="ext"/>
+<line x1="198.0" y1="610.8" x2="198.0" y2="790.0"/>
+<line x1="202.0" y1="606.8" x2="194.0" y2="614.8" class="tick"/>
+<line x1="202.0" y1="786.0" x2="194.0" y2="794.0" class="tick"/>
+<text x="189.0" y="700.4" font-size="11" transform="rotate(90.0 189.0 700.4)" text-anchor="middle" dominant-baseline="middle">112</text></g>
+<g class="dim">
+<line x1="256.0" y1="350.0" x2="105.0" y2="350.0" class="ext"/>
+<line x1="256.0" y1="790.0" x2="105.0" y2="790.0" class="ext"/>
+<line x1="110.0" y1="350.0" x2="110.0" y2="790.0"/>
+<line x1="114.0" y1="346.0" x2="106.0" y2="354.0" class="tick"/>
+<line x1="114.0" y1="786.0" x2="106.0" y2="794.0" class="tick"/>
+<text x="101.0" y="570.0" font-size="13" transform="rotate(90.0 101.0 570.0)" text-anchor="middle" dominant-baseline="middle">275</text></g>
+<g class="dim">
+<line x1="310.0" y1="813.6" x2="310.0" y2="876.6" class="ext"/>
+<line x1="401.2" y1="813.6" x2="401.2" y2="876.6" class="ext"/>
+<line x1="310.0" y1="871.6" x2="401.2" y2="871.6"/>
+<line x1="306.0" y1="867.6" x2="314.0" y2="875.6" class="tick"/>
+<line x1="397.2" y1="867.6" x2="405.2" y2="875.6" class="tick"/>
+<text x="355.6" y="880.6" font-size="11" transform="rotate(0.0 355.6 880.6)" text-anchor="middle" dominant-baseline="middle">57</text></g>
+<g class="dim">
+<line x1="401.2" y1="813.6" x2="401.2" y2="876.6" class="ext"/>
+<line x1="513.2" y1="813.6" x2="513.2" y2="876.6" class="ext"/>
+<line x1="401.2" y1="871.6" x2="513.2" y2="871.6"/>
+<line x1="397.2" y1="867.6" x2="405.2" y2="875.6" class="tick"/>
+<line x1="509.2" y1="867.6" x2="517.2" y2="875.6" class="tick"/>
+<text x="457.2" y="880.6" font-size="11" transform="rotate(0.0 457.2 880.6)" text-anchor="middle" dominant-baseline="middle">70</text></g>
+<g class="dim">
+<line x1="513.2" y1="813.6" x2="513.2" y2="876.6" class="ext"/>
+<line x1="542.0" y1="813.6" x2="542.0" y2="876.6" class="ext"/>
+<line x1="513.2" y1="871.6" x2="542.0" y2="871.6"/>
+<line x1="509.2" y1="867.6" x2="517.2" y2="875.6" class="tick"/>
+<line x1="538.0" y1="867.6" x2="546.0" y2="875.6" class="tick"/>
+<text x="527.6" y="880.6" font-size="11" transform="rotate(0.0 527.6 880.6)" text-anchor="middle" dominant-baseline="middle">18</text></g>
+<g class="dim">
+<line x1="565.6" y1="350.0" x2="628.6" y2="350.0" class="ext"/>
+<line x1="565.6" y1="514.8" x2="628.6" y2="514.8" class="ext"/>
+<line x1="623.6" y1="350.0" x2="623.6" y2="514.8"/>
+<line x1="619.6" y1="346.0" x2="627.6" y2="354.0" class="tick"/>
+<line x1="619.6" y1="510.8" x2="627.6" y2="518.8" class="tick"/>
+<text x="632.6" y="432.4" font-size="11" transform="rotate(90.0 632.6 432.4)" text-anchor="middle" dominant-baseline="middle">103</text></g>
+<g class="dim">
+<line x1="565.6" y1="514.8" x2="628.6" y2="514.8" class="ext"/>
+<line x1="565.6" y1="658.8" x2="628.6" y2="658.8" class="ext"/>
+<line x1="623.6" y1="514.8" x2="623.6" y2="658.8"/>
+<line x1="619.6" y1="510.8" x2="627.6" y2="518.8" class="tick"/>
+<line x1="619.6" y1="654.8" x2="627.6" y2="662.8" class="tick"/>
+<text x="632.6" y="586.8" font-size="11" transform="rotate(90.0 632.6 586.8)" text-anchor="middle" dominant-baseline="middle">90</text></g>
+<g class="dim">
+<line x1="565.6" y1="658.8" x2="628.6" y2="658.8" class="ext"/>
+<line x1="565.6" y1="790.0" x2="628.6" y2="790.0" class="ext"/>
+<line x1="623.6" y1="658.8" x2="623.6" y2="790.0"/>
+<line x1="619.6" y1="654.8" x2="627.6" y2="662.8" class="tick"/>
+<line x1="619.6" y1="786.0" x2="627.6" y2="794.0" class="tick"/>
+<text x="632.6" y="724.4" font-size="11" transform="rotate(90.0 632.6 724.4)" text-anchor="middle" dominant-baseline="middle">82</text></g>
+<text x="723.6" y="150" font-size="13" class="lbl">ORIENTAMENTO</text>
+<text x="723.6" y="172" font-size="11.5" fill="#444">Come lo schizzo e la pianta generale: in alto muro esterno (Est), a sinistra</text>
+<text x="723.6" y="188" font-size="11.5" fill="#444">muro esterno con finestra (Nord), in basso la porta sul corridoio.</text>
+<text x="723.6" y="214" font-size="13" class="lbl">COME HO LETTO LO SCHIZZO</text>
+<text x="723.6" y="236" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="236" font-size="12" class="t">Locale 145 × 275 cm (≈ 4,0 m²)</text>
+<text x="745.6" y="251" font-size="10.5" class="s">barre gialle</text>
+<text x="723.6" y="270" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="270" font-size="12" class="t">Finestra a sinistra: 83 dall'alto, larga 80</text>
+<text x="745.6" y="285" font-size="10.5" class="s">quote rosse</text>
+<text x="723.6" y="304" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="304" font-size="12" class="t">Porta P3: 57 + 70 + 18 = 145, apre nel bagno</text>
+<text x="745.6" y="319" font-size="10.5" class="s">stessa porta del corridoio (60 + 68 + 22)</text>
+<text x="723.6" y="338" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="338" font-size="12" class="t">Doccia 80 × 103 in alto a destra, vetro di 103</text>
+<text x="745.6" y="353" font-size="10.5" class="s">miscelatore sulla parete destra</text>
+<text x="723.6" y="372" font-size="13" font-weight="700" fill="#d98200">⚠</text><text x="745.6" y="372" font-size="12" class="t">WC in alto, bidet sotto la finestra, lavabo da 100</text>
+<text x="745.6" y="387" font-size="10.5" class="s">posizioni lungo le pareti non quotate</text>
+<text x="723.6" y="406" font-size="13" font-weight="700" fill="#d98200">⚠</text><text x="745.6" y="406" font-size="12" class="t">Rettangolo vicino alla porta: termoarredo?</text>
+<text x="745.6" y="421" font-size="10.5" class="s">disegnato ≈ 40 × 10</text>
+<text x="723.6" y="440" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="440" font-size="12" class="t">Prese: 2× a sinistra, 1× a destra 90 cm sotto la doccia</text>
+<text x="745.6" y="455" font-size="10.5" class="s">verde sopra la presa: interruttore</text>
+<text x="723.6" y="480" font-size="13" class="lbl">PUNTI DA CONFERMARE</text>
+<circle cx="731.6" cy="498" r="9" fill="#d98200"/><text x="731.6" y="498.5" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text><text x="749.6" y="502" font-size="12" class="t">WC: distanza dell'asse dal muro sinistro (ho messo 36 cm)</text>
+<circle cx="731.6" cy="520" r="9" fill="#d98200"/><text x="731.6" y="520.5" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">2</text><text x="749.6" y="524" font-size="12" class="t">Bidet e lavabo: dove iniziano lungo la parete sinistra</text>
+<circle cx="731.6" cy="542" r="9" fill="#d98200"/><text x="731.6" y="542.5" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">3</text><text x="749.6" y="546" font-size="12" class="t">Simbolo "X (+1)" sopra la doccia: punto luce o aspiratore?</text>
+<circle cx="731.6" cy="564" r="9" fill="#d98200"/><text x="731.6" y="564.5" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">4</text><text x="749.6" y="568" font-size="12" class="t">Simbolo verde a destra: interruttore? (anche nel corridoio)</text>
+<circle cx="731.6" cy="586" r="9" fill="#d98200"/><text x="731.6" y="586.5" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">5</text><text x="749.6" y="590" font-size="12" class="t">Termoarredo vicino alla porta: misure</text>
+<text x="723.6" y="618" font-size="13" class="lbl">ARREDO PROPOSTO</text>
+<text x="723.6" y="640" font-size="12" fill="#2b2b2b">Elementi esistenti mantenuti. Aggiunti: colonna 30 cm accanto</text>
+<text x="723.6" y="657" font-size="12" fill="#2b2b2b">alla doccia, specchio sopra il lavabo, tappeto doccia.</text>
+<text x="723.6" y="674" font-size="12" fill="#2b2b2b">La lavatrice (60×60) non entra con lo spazio di carico.</text>
+<text x="723.6" y="701" font-size="13" class="lbl">VERIFICHE DI SPAZIO</text>
+<text x="723.6" y="723" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="723" font-size="12" class="t">Davanti al lavabo ≥ 85 cm liberi (minimo 55–60)</text>
+<text x="723.6" y="742" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="742" font-size="12" class="t">Davanti al bidet 60 cm fino alla colonna</text>
+<text x="723.6" y="761" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="761" font-size="12" class="t">Arco della porta libero: lavabo a 9 cm</text>
+<text x="723.6" y="780" font-size="13" font-weight="700" fill="#2e7d32">✔</text><text x="745.6" y="780" font-size="12" class="t">Ingresso doccia 80 cm libero</text>
+<text x="723.6" y="799" font-size="13" font-weight="700" fill="#d98200">⚠</text><text x="745.6" y="799" font-size="12" class="t">Davanti al WC 49 cm fino al bidet (consigliati 55–60)</text>
+<text x="723.6" y="818" font-size="13" font-weight="700" fill="#d98200">⚠</text><text x="745.6" y="818" font-size="12" class="t">Asse WC a 36 cm dal muro, 10 cm dal vetro (consigliati ≥ 40)</text>
+<text x="723.6" y="849" font-size="13" class="lbl">LEGENDA</text>
+<g transform="translate(723.6,871)"><rect width="26" height="12" fill="#262626"/><text x="36" y="10" font-size="11.5" class="t">Muro (30 esterno ipotesi, 11 tramezzo)</text></g>
+<g transform="translate(1013.6,871)"><rect width="26" height="12" fill="#dbeafb" stroke="#1565c0" stroke-width="2"/><text x="36" y="10" font-size="11.5" class="t">Finestra, ante all'interno</text></g>
+<g transform="translate(723.6,897)"><rect width="26" height="12" fill="url(#rad)" stroke="#d9534f" stroke-width="1.5"/><text x="36" y="10" font-size="11.5" class="t">Calorifero / termoarredo</text></g>
+<g transform="translate(1013.6,897)"><rect x="6" y="-1" width="14" height="14" rx="2" fill="#fff" stroke="#1a56c4" stroke-width="1.8"/><text x="36" y="10" font-size="11.5" class="t">Presa (n× = quantità)</text></g>
+<g transform="translate(723.6,923)"><rect x="5" y="-3" width="16" height="18" rx="4" fill="#e7f6f3" stroke="#2a9d8f" stroke-width="1.8"/><text x="36" y="10" font-size="11.5" class="t">Interruttore</text></g>
+<g transform="translate(1013.6,923)"><circle cx="13" cy="6" r="9" fill="#d98200"/><text x="36" y="10" font-size="11.5" class="t">Da confermare</text></g>
+<g transform="translate(723.6,973)"><text y="-8" font-size="11" class="lbl">SCALA GRAFICA 1:25</text>
+<rect x="0" y="0" width="160" height="7" fill="#111" stroke="#111"/>
+<rect x="160" y="0" width="160" height="7" fill="#fff" stroke="#111"/>
+<text x="0" y="22" font-size="10" text-anchor="middle">0</text>
+<text x="160" y="22" font-size="10" text-anchor="middle">1</text>
+<text x="320" y="22" font-size="10" text-anchor="middle">2</text>
+<text x="332" y="22" font-size="10">m</text></g>
+</svg>

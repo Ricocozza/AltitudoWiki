@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="197mm" height="339mm" viewBox="0 0 788 1356" font-family="Helvetica, Arial, sans-serif">
+<title>CORRIDOIO - stanza vuota - scala 1:25</title>
+<defs>
+  <pattern id="g10" width="16" height="16" patternUnits="userSpaceOnUse" x="228.0" y="306.40000000000003">
+    <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#d3dce6" stroke-width="0.35"/></pattern>
+  <pattern id="g50" width="80" height="80" patternUnits="userSpaceOnUse" x="228.0" y="306.40000000000003">
+    <rect width="80" height="80" fill="url(#g10)"/>
+    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#b4c4d4" stroke-width="0.7"/></pattern>
+  <pattern id="g100" width="160" height="160" patternUnits="userSpaceOnUse" x="228.0" y="306.40000000000003">
+    <rect width="160" height="160" fill="url(#g50)"/>
+    <path d="M 160 0 L 0 0 0 160" fill="none" stroke="#8ea4bb" stroke-width="1"/></pattern>
+  <pattern id="rad" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#d9534f" stroke-width="1.2"/></pattern>
+</defs>
+<style>
+  .dim line { stroke:#2b5d8a; stroke-width:0.7; } .dim .ext { stroke-width:0.45; }
+  .dim .tick { stroke-width:1.3; } .dim text { fill:#2b5d8a; font-weight:600; }
+  .lbl { font-weight:700; letter-spacing:1px; fill:#1d1d1d; }
+</style>
+<rect width="788" height="1356" fill="#fff"/>
+<text x="30" y="44" font-size="22" class="lbl">CORRIDOIO</text>
+<text x="30" y="68" font-size="13" fill="#555">150 × 570 cm · 8,55 m² · scala 1:25 · griglia 10 / 50 / 100 cm</text>
+<rect x="180.0" y="288.8" width="305.6" height="977.6" fill="#262626"/>
+<rect x="228.0" y="306.4" width="240.0" height="912.0" fill="#ffffff"/>
+<rect x="228.0" y="306.4" width="240.0" height="912.0" fill="url(#g100)"/>
+<rect x="180.0" y="642.4" width="48.0" height="256.0" fill="#dbeafb" stroke="#1565c0" stroke-width="2"/>
+<line x1="201.6" y1="642.4" x2="201.6" y2="898.4" stroke="#1565c0" stroke-width="1"/>
+<line x1="206.4" y1="642.4" x2="206.4" y2="898.4" stroke="#1565c0" stroke-width="1"/>
+<line x1="180.0" y1="770.4" x2="228.0" y2="770.4" stroke="#1565c0" stroke-width="1.5"/>
+<line x1="228.0" y1="642.4" x2="356.0" y2="642.4" stroke="#1565c0" stroke-width="1.2" stroke-dasharray="5 3"/>
+<path d="M 356.0 642.4 A 128.0 128.0 0 0 1 228.0 770.4" fill="none" stroke="#1565c0" stroke-width="0.9" stroke-dasharray="5 3"/>
+<line x1="228.0" y1="898.4" x2="356.0" y2="898.4" stroke="#1565c0" stroke-width="1.2" stroke-dasharray="5 3"/>
+<path d="M 356.0 898.4 A 128.0 128.0 0 0 0 228.0 770.4" fill="none" stroke="#1565c0" stroke-width="0.9" stroke-dasharray="5 3"/>
+<rect x="228.0" y="698.4" width="19.2" height="144.0" fill="url(#rad)" stroke="#d9534f" stroke-width="1.5"/>
+<rect x="324.0" y="288.8" width="108.8" height="17.6" fill="#ffffff"/>
+<line x1="324.0" y1="288.8" x2="324.0" y2="306.4" stroke="#262626" stroke-width="1.5"/>
+<line x1="432.8" y1="288.8" x2="432.8" y2="306.4" stroke="#262626" stroke-width="1.5"/>
+<line x1="432.8" y1="288.8" x2="432.8" y2="180.0" stroke="#c62828" stroke-width="2.5"/>
+<path d="M 432.8 180.0 A 108.8 108.8 0 0 0 324.0 288.8" fill="none" stroke="#c62828" stroke-width="1" stroke-dasharray="5 3"/>
+<g><rect x="364.4" y="288.6" width="28" height="18" rx="9" fill="#fff" stroke="#c62828" stroke-width="1.3"/><text x="378.4" y="298.1" font-size="10" font-weight="700" fill="#c62828" text-anchor="middle" dominant-baseline="middle">P3</text></g>
+<rect x="468.0" y="348.0" width="17.6" height="128.0" fill="#ffffff"/>
+<line x1="468.0" y1="348.0" x2="485.6" y2="348.0" stroke="#262626" stroke-width="1.5"/>
+<line x1="468.0" y1="476.0" x2="485.6" y2="476.0" stroke="#262626" stroke-width="1.5"/>
+<line x1="485.6" y1="476.0" x2="613.6" y2="476.0" stroke="#c62828" stroke-width="2.5"/>
+<path d="M 613.6 476.0 A 128.0 128.0 0 0 0 485.6 348.0" fill="none" stroke="#c62828" stroke-width="1" stroke-dasharray="5 3"/>
+<g><rect x="462.8" y="403.0" width="28" height="18" rx="9" fill="#fff" stroke="#c62828" stroke-width="1.3"/><text x="476.8" y="412.5" font-size="10" font-weight="700" fill="#c62828" text-anchor="middle" dominant-baseline="middle">P4</text></g>
+<rect x="468.0" y="540.0" width="17.6" height="115.2" fill="#ffffff"/>
+<line x1="468.0" y1="540.0" x2="485.6" y2="540.0" stroke="#262626" stroke-width="1.5"/>
+<line x1="468.0" y1="655.2" x2="485.6" y2="655.2" stroke="#262626" stroke-width="1.5"/>
+<line x1="485.6" y1="540.0" x2="600.8" y2="540.0" stroke="#c62828" stroke-width="2.5"/>
+<path d="M 600.8 540.0 A 115.2 115.2 0 0 1 485.6 655.2" fill="none" stroke="#c62828" stroke-width="1" stroke-dasharray="5 3"/>
+<g><rect x="462.8" y="588.6" width="28" height="18" rx="9" fill="#fff" stroke="#c62828" stroke-width="1.3"/><text x="476.8" y="598.1" font-size="10" font-weight="700" fill="#c62828" text-anchor="middle" dominant-baseline="middle">P5</text></g>
+<rect x="468.0" y="1020.0" width="17.6" height="126.4" fill="#ffffff"/>
+<line x1="468.0" y1="1020.0" x2="485.6" y2="1020.0" stroke="#262626" stroke-width="1.5"/>
+<line x1="468.0" y1="1146.4" x2="485.6" y2="1146.4" stroke="#262626" stroke-width="1.5"/>
+<line x1="485.6" y1="1020.0" x2="612.0" y2="1020.0" stroke="#c62828" stroke-width="2.5"/>
+<path d="M 612.0 1020.0 A 126.4 126.4 0 0 1 485.6 1146.4" fill="none" stroke="#c62828" stroke-width="1" stroke-dasharray="5 3"/>
+<g><rect x="462.8" y="1074.2" width="28" height="18" rx="9" fill="#fff" stroke="#c62828" stroke-width="1.3"/><text x="476.8" y="1083.7" font-size="10" font-weight="700" fill="#c62828" text-anchor="middle" dominant-baseline="middle">P6</text></g>
+<rect x="296.8" y="1218.4" width="128.0" height="48.0" fill="#ffffff"/>
+<line x1="296.8" y1="1218.4" x2="296.8" y2="1266.4" stroke="#262626" stroke-width="1.5"/>
+<line x1="424.8" y1="1218.4" x2="424.8" y2="1266.4" stroke="#262626" stroke-width="1.5"/>
+<line x1="296.8" y1="1218.4" x2="296.8" y2="1090.4" stroke="#c62828" stroke-width="2.5"/>
+<path d="M 296.8 1090.4 A 128.0 128.0 0 0 1 424.8 1218.4" fill="none" stroke="#c62828" stroke-width="1" stroke-dasharray="5 3"/>
+<g><rect x="346.8" y="1233.4" width="28" height="18" rx="9" fill="#fff" stroke="#c62828" stroke-width="1.3"/><text x="360.8" y="1242.9" font-size="10" font-weight="700" fill="#c62828" text-anchor="middle" dominant-baseline="middle">P1</text></g>
+<g><rect x="461.0" y="664.6" width="14" height="26" rx="2" fill="#fff" stroke="#1a56c4" stroke-width="1.8"/><circle cx="468.0" cy="671.6" r="1.8" fill="#1a56c4"/><circle cx="468.0" cy="683.6" r="1.8" fill="#1a56c4"/><text x="446.0" y="678.1" font-size="14" font-weight="700" fill="#1a56c4" text-anchor="middle" dominant-baseline="middle">1×</text></g>
+<g><rect x="439.2" y="295.4" width="16" height="22" rx="4" fill="#e7f6f3" stroke="#2a9d8f" stroke-width="1.8"/><line x1="444.2" y1="310.4" x2="450.2" y2="302.4" stroke="#2a9d8f" stroke-width="2"/></g>
+<g><rect x="460.0" y="1167.4" width="16" height="22" rx="4" fill="#e7f6f3" stroke="#2a9d8f" stroke-width="1.8"/><line x1="465.0" y1="1182.4" x2="471.0" y2="1174.4" stroke="#2a9d8f" stroke-width="2"/></g>
+<g class="dim">
+<line x1="228.0" y1="282.8" x2="228.0" y2="135.0" class="ext"/>
+<line x1="468.0" y1="282.8" x2="468.0" y2="135.0" class="ext"/>
+<line x1="228.0" y1="140.0" x2="468.0" y2="140.0"/>
+<line x1="224.0" y1="144.0" x2="232.0" y2="136.0" class="tick"/>
+<line x1="464.0" y1="144.0" x2="472.0" y2="136.0" class="tick"/>
+<text x="348.0" y="131.0" font-size="13" transform="rotate(0.0 348.0 131.0)" text-anchor="middle" dominant-baseline="middle">150</text></g>
+<g class="dim">
+<line x1="174.0" y1="306.4" x2="103.0" y2="306.4" class="ext"/>
+<line x1="174.0" y1="1218.4" x2="103.0" y2="1218.4" class="ext"/>
+<line x1="108.0" y1="306.4" x2="108.0" y2="1218.4"/>
+<line x1="112.0" y1="302.4" x2="104.0" y2="310.4" class="tick"/>
+<line x1="112.0" y1="1214.4" x2="104.0" y2="1222.4" class="tick"/>
+<text x="99.0" y="762.4" font-size="13" transform="rotate(90.0 99.0 762.4)" text-anchor="middle" dominant-baseline="middle">570</text></g>
+<g transform="translate(30,1328)"><rect width="20" height="10" fill="#dbeafb" stroke="#1565c0" stroke-width="1.6"/><text x="26" y="9" font-size="11">finestra</text><rect x="90" width="20" height="10" fill="url(#rad)" stroke="#d9534f" stroke-width="1.3"/><text x="116" y="9" font-size="11">calorifero</text><rect x="190" y="-2" width="9" height="14" rx="2" fill="#fff" stroke="#1a56c4" stroke-width="1.6"/><text x="206" y="9" font-size="11">presa</text><rect x="256" y="-3" width="11" height="15" rx="3" fill="#e7f6f3" stroke="#2a9d8f" stroke-width="1.6"/><text x="274" y="9" font-size="11">interruttore</text><path d="M 360 11 L 360 -3 A 14 14 0 0 1 374 11" fill="none" stroke="#c62828" stroke-width="1.4"/><text x="380" y="9" font-size="11">porta</text></g>
+</svg>

@@ -560,3 +560,99 @@ if __name__ == '__main__':
     for sp in STANZE:
         for arr in (True, False):
             print(*genera(sp, arr))
+
+
+# ------------------------------------------------------------------ versione vuota
+# Solo elementi fissi: muri, finestre, porte, caloriferi, prese, interruttori.
+# Niente sanitari, arredo, marcatori o catene di quote: base pulita per Milanote.
+RADIATORI = {
+    'bagno': [(135, 203, 145, 241)],
+    'sala': [(388, 165, 400, 245)],
+    'corridoio': [(0, 245, 12, 335)],
+    'camera': [(110, 0, 190, 12)],
+    'cucina': [(77, 0, 92, 10)],
+}
+
+CUCINA = dict(
+    nome='CUCINA', file='cucina', W=154, L=400,
+    muri=dict(top=EXT, right=EXT, left=TRA, bottom=TRA),
+    finestre=[('top', 37, 99, 2)],
+    porte=[('P6', 'bottom', 15, 94, 0, True), ('P2', 'right', 310, 382, 1, False)],
+    prese=[(0, 30, 2, 22, 0), (0, 268, 2, 22, 0), (154, 262, 1, -22, 0)],
+    interruttori=[],
+    # elemento d'angolo di 26 cm (pilastro/nicchia): fa parte dei muri
+    extra=lambda t, sp: t.rect(0, 0, m(26), m(20), fill=C_WALL),
+)
+
+
+def genera_vuota(sp):
+    W, L, T = sp['W'], sp['L'], sp['muri']
+    # spazio a destra per le ante delle porte che aprono verso l'esterno
+    fuori = max([a1 - a0 for pid, lato, a0, a1, c, dentro in sp['porte'] if lato == 'right' and not dentro] + [0])
+    fuori_top = max([a1 - a0 for pid, lato, a0, a1, c, dentro in sp['porte'] if lato == 'top' and not dentro] + [0])
+    gp.OX = 60 + 0.75 * S + T['left'] * 1.6
+    gp.OY = 110 + max(0.75 * S, fuori_top * 1.6 + 70) + T['top'] * 1.6
+    ox, oy = gp.OX, gp.OY
+    Wt = int(max(ox + (W + T['right'] + fuori) * 1.6 + 60, ox + 560))
+    Ht = int(oy + (L + T['bottom']) * 1.6 + 90)
+    t = gp.Tav()
+    w = t.w
+    mq = W * L / 10000
+    w(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{Wt*0.25:.0f}mm" height="{Ht*0.25:.0f}mm" viewBox="0 0 {Wt} {Ht}" font-family="Helvetica, Arial, sans-serif">
+<title>{sp['nome']} - stanza vuota - scala 1:25</title>
+<defs>
+  <pattern id="g10" width="16" height="16" patternUnits="userSpaceOnUse" x="{ox}" y="{oy}">
+    <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#d3dce6" stroke-width="0.35"/></pattern>
+  <pattern id="g50" width="80" height="80" patternUnits="userSpaceOnUse" x="{ox}" y="{oy}">
+    <rect width="80" height="80" fill="url(#g10)"/>
+    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#b4c4d4" stroke-width="0.7"/></pattern>
+  <pattern id="g100" width="160" height="160" patternUnits="userSpaceOnUse" x="{ox}" y="{oy}">
+    <rect width="160" height="160" fill="url(#g50)"/>
+    <path d="M 160 0 L 0 0 0 160" fill="none" stroke="#8ea4bb" stroke-width="1"/></pattern>
+  <pattern id="rad" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="{C_RAD}" stroke-width="1.2"/></pattern>
+</defs>
+<style>
+  .dim line {{ stroke:{gp.C_DIM}; stroke-width:0.7; }} .dim .ext {{ stroke-width:0.45; }}
+  .dim .tick {{ stroke-width:1.3; }} .dim text {{ fill:{gp.C_DIM}; font-weight:600; }}
+  .lbl {{ font-weight:700; letter-spacing:1px; fill:#1d1d1d; }}
+</style>
+<rect width="{Wt}" height="{Ht}" fill="#fff"/>
+<text x="30" y="44" font-size="22" class="lbl">{sp['nome']}</text>
+<text x="30" y="68" font-size="13" fill="#555">{W} × {L} cm · {gp.fmt(mq)} m² · scala 1:25 · griglia 10 / 50 / 100 cm</text>''')
+    t.rect(m(-T['left']), m(-T['top']), m(W + T['right']), m(L + T['bottom']), fill=C_WALL)
+    t.rect(0, 0, m(W), m(L), fill='#ffffff')
+    t.rect(0, 0, m(W), m(L), fill='url(#g100)')
+    if 'extra' in sp and sp is CUCINA:
+        sp['extra'](t, sp)
+    for lato, a0, a1, ante in sp['finestre']:
+        finestra(t, sp, lato, a0, a1, ante)
+    for r in RADIATORI[sp['file']]:
+        radiatore(t, *r)
+    for pid, lato, a0, a1, cern, dentro in sp['porte']:
+        porta(t, sp, pid, lato, a0, a1, cern, dentro)
+    for u, v, n, dx, dy in sp['prese']:
+        presa(t, u, v, n, dx, dy)
+    if sp is SALA:
+        presa(t, 174, 149, 0)
+    for u, v in sp['interruttori']:
+        interruttore(t, u, v)
+    catena(t, sp, 'top', [(0, W, str(W))], max(0.45, fuori_top / 100 + 0.25), 13)
+    catena(t, sp, 'left', [(0, L, str(L))], 0.45, 13)
+    leg = (f'<g transform="translate(30,{Ht-28})">'
+           f'<rect width="20" height="10" fill="#dbeafb" stroke="{C_WIN}" stroke-width="1.6"/><text x="26" y="9" font-size="11">finestra</text>'
+           f'<rect x="90" width="20" height="10" fill="url(#rad)" stroke="{C_RAD}" stroke-width="1.3"/><text x="116" y="9" font-size="11">calorifero</text>'
+           f'<rect x="190" y="-2" width="9" height="14" rx="2" fill="#fff" stroke="{C_SOCK}" stroke-width="1.6"/><text x="206" y="9" font-size="11">presa</text>'
+           f'<rect x="256" y="-3" width="11" height="15" rx="3" fill="#e7f6f3" stroke="{C_SW}" stroke-width="1.6"/><text x="274" y="9" font-size="11">interruttore</text>'
+           f'<path d="M 360 11 L 360 -3 A 14 14 0 0 1 374 11" fill="none" stroke="{C_DOOR}" stroke-width="1.4"/><text x="380" y="9" font-size="11">porta</text></g>')
+    w(leg)
+    w('</svg>')
+    nome = f"{sp['file']}_vuota.svg"
+    with open(nome, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(t.o))
+    return nome, Wt, Ht
+
+
+if __name__ == '__main__':
+    for sp in STANZE + [CUCINA]:
+        print(*genera_vuota(sp))
